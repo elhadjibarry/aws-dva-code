@@ -5,7 +5,7 @@ Resources:
     Type: AWS::S3::Bucket
     Description: Create Amazon S3 bucket using CloudFormation
     Properties:
-      BucketName: YOUR-BUCKET-NAME
+      BucketName: dct-dva-cf-bucket-1
       BucketEncryption: 
         ServerSideEncryptionConfiguration: 
           - ServerSideEncryptionByDefault:
