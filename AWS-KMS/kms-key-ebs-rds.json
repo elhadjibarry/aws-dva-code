@@ -6,7 +6,7 @@
             "Sid": "Allow access for Key Administrators",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::111122223333:user/User"
+                "AWS": "arn:aws:iam::291934546285:user/elhadji"
             },
             "Action": [
                 "kms:Create*",
@@ -30,7 +30,7 @@
             "Sid": "RestrictKeyUsageToEC2andRDS",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::111122223333:user/User"
+                "AWS": "arn:aws:iam::291934546285:user/elhadji"
             },
             "Action": [
                 "kms:Encrypt",

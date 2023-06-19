@@ -25,7 +25,7 @@ from . import widget_service
 9. Make sure the app still syntehsizes a stack
 cdk synth
 10. Deploy the app by bootstrapping the AWS environment
-cdk bootstrap aws://ACCOUNT-NUMBER/REGION
+cdk bootstrap aws://291934546285/us-east-1
 11. Deploy the app:
 cdk deploy
 12. Test the app by running the API execution URL, e.g.
@@ -46,12 +46,12 @@ https://GUID.execute-api-REGION.amazonaws.com/prod/
 cdk deploy
 
 # Test creating, showing, and deleting widgets
-curl -X GET https://GUID.execute-api.REGION.amazonaws.com/prod
-curl -X POST https://GUID.execute-api.REGION.amazonaws.com/prod/mywidget
-curl -X GET https://GUID.execute-api.REGION.amazonaws.com/prod
-curl -X GET https://GUID.execute-api.REGION.amazonaws.com/prod/mywidget
-curl -X DELETE https://GUID.execute-api.REGION.amazonaws.com/prod/mywidget
-curl -X GET https://GUID.execute-api.REGION.amazonaws.com/prod
+curl -X GET https://21b51itzil.execute-api.us-east-1.amazonaws.com/prod/
+curl -X POST https://21b51itzil.execute-api.us-east-1.amazonaws.com/prod/mywidget
+curl -X GET https://21b51itzil.execute-api.us-east-1.amazonaws.com/prod/
+curl -X GET https://21b51itzil.execute-api.us-east-1.amazonaws.com/prod/mywidget
+curl -X DELETE https://21b51itzil.execute-api.us-east-1.amazonaws.com/prod/mywidget
+curl -X GET https://21b51itzil.execute-api.us-east-1.amazonaws.com/prod/
 
 # Cleanup
 cdk destroy
